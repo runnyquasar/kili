@@ -20,7 +20,8 @@
   <WindowWidth>21940</WindowWidth>
   <WindowTopX>2120</WindowTopX>
   <WindowTopY>1060</WindowTopY>
-  <ActiveSheet>1</ActiveSheet>
+  <ActiveSheet>4</ActiveSheet>
+  <FirstVisibleSheet>2</FirstVisibleSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -67,6 +68,9 @@
   </Style>
   <Style ss:ID="s77">
    <NumberFormat/>
+  </Style>
+  <Style ss:ID="s93">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:Indent="1"/>
   </Style>
  </Styles>
  <Worksheet ss:Name="сводная таблица по ср2">
@@ -910,7 +914,7 @@
   <Table ss:ExpandedColumnCount="299" ss:ExpandedRowCount="45" x:FullColumns="1"
    x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="14">
    <Column ss:AutoFitWidth="0" ss:Width="115"/>
-   <Column ss:AutoFitWidth="0" ss:Width="114"/>
+   <Column ss:Width="114"/>
    <Column ss:Width="83"/>
    <Column ss:AutoFitWidth="0" ss:Width="63" ss:Span="1"/>
    <Column ss:Index="6" ss:Width="32" ss:Span="7"/>
@@ -1417,13 +1421,13 @@
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
    <PageLayoutZoom>0</PageLayoutZoom>
-   <Selected/>
-   <TopRowVisible>22</TopRowVisible>
+   <TopRowVisible>9</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>23</ActiveRow>
-     <ActiveCol>4</ActiveCol>
+     <ActiveRow>3</ActiveRow>
+     <ActiveCol>3</ActiveCol>
+     <RangeSelection>R4C4:R45C4</RangeSelection>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -1797,6 +1801,12 @@
      <Reference>C2:C10</Reference>
     </ConsolidationReference>
    </PTSource>
+   <Selection>
+    <PTRule>
+     <Rule>'Общий итог по строке'</Rule>
+     <RuleV10>'Row Grand Total'</RuleV10>
+    </PTRule>
+   </Selection>
   </PivotTable>
  </Worksheet>
  <Worksheet ss:Name="Сравнительная 2">
@@ -4293,12 +4303,925 @@
    <ProtectScenarios>False</ProtectScenarios>
   </WorksheetOptions>
  </Worksheet>
+ <Worksheet ss:Name="сводная сравнительная">
+  <Table ss:ExpandedColumnCount="44" ss:ExpandedRowCount="46" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="14">
+   <Column ss:Width="109"/>
+   <Column ss:Width="114"/>
+   <Column ss:AutoFitWidth="0" ss:Width="83"/>
+   <Column ss:AutoFitWidth="0" ss:Width="63" ss:Span="1"/>
+   <Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="48"/>
+   <Column ss:AutoFitWidth="0" ss:Width="42"/>
+   <Column ss:AutoFitWidth="0" ss:Width="41" ss:Span="1"/>
+   <Column ss:Index="10" ss:AutoFitWidth="0" ss:Width="44"/>
+   <Column ss:AutoFitWidth="0" ss:Width="35"/>
+   <Column ss:AutoFitWidth="0" ss:Width="47"/>
+   <Column ss:AutoFitWidth="0" ss:Width="57"/>
+   <Column ss:AutoFitWidth="0" ss:Width="45"/>
+   <Column ss:AutoFitWidth="0" ss:Width="60"/>
+   <Column ss:AutoFitWidth="0" ss:Width="32"/>
+   <Column ss:AutoFitWidth="0" ss:Width="55"/>
+   <Column ss:AutoFitWidth="0" ss:Width="36"/>
+   <Column ss:AutoFitWidth="0" ss:Width="41"/>
+   <Column ss:AutoFitWidth="0" ss:Width="35"/>
+   <Column ss:AutoFitWidth="0" ss:Width="34"/>
+   <Column ss:AutoFitWidth="0" ss:Width="41"/>
+   <Column ss:AutoFitWidth="0" ss:Width="42"/>
+   <Column ss:AutoFitWidth="0" ss:Width="58"/>
+   <Column ss:AutoFitWidth="0" ss:Width="40"/>
+   <Column ss:AutoFitWidth="0" ss:Width="30"/>
+   <Column ss:AutoFitWidth="0" ss:Width="58"/>
+   <Column ss:AutoFitWidth="0" ss:Width="41"/>
+   <Column ss:AutoFitWidth="0" ss:Width="35"/>
+   <Column ss:AutoFitWidth="0" ss:Width="56"/>
+   <Column ss:AutoFitWidth="0" ss:Width="43"/>
+   <Column ss:AutoFitWidth="0" ss:Width="53"/>
+   <Column ss:AutoFitWidth="0" ss:Width="34"/>
+   <Column ss:AutoFitWidth="0" ss:Width="40"/>
+   <Column ss:AutoFitWidth="0" ss:Width="46"/>
+   <Column ss:AutoFitWidth="0" ss:Width="48"/>
+   <Column ss:Width="69"/>
+   <Column ss:AutoFitWidth="0" ss:Width="43"/>
+   <Column ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="33" ss:Span="1"/>
+   <Column ss:Index="42" ss:Width="72"/>
+   <Column ss:AutoFitWidth="0" ss:Width="40"/>
+   <Column ss:AutoFitWidth="0" ss:Width="63"/>
+   <Row ss:Index="3">
+    <Cell><Data ss:Type="String">Количество из Center</Data></Cell>
+    <Cell><Data ss:Type="String">Названия столбцов</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Названия строк</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell><Data ss:Type="String">прилагательное</Data></Cell>
+    <Cell><Data ss:Type="String">Общий итог</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">близкий</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">быстро</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">вкусно</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">выносливый</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">высокий</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">высоко</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">громко</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">далеко</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">дешево</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">долго</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">жесткий</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">интересно</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">красиво</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">маленький</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">мало</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">11</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">медленно</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">много</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">28</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">низкий</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">низко</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">остро</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">плотно</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">поздно</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">правильно</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">просто</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">рано</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">серьёзный</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">сильно</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">скоро</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">скромный</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">сложно</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">толковый</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">точно</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">трудно</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">уместно</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">успешно</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">устройчивый</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">хорошо</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">7</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">целесообразно</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">часто</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">четко</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">эффективный</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Общий итог</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">88</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <LeftColumnVisible>4</LeftColumnVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>19</ActiveRow>
+     <ActiveCol>5</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <PivotTable xmlns="urn:schemas-microsoft-com:office:excel">
+   <Name>Сводная таблица4</Name>
+   <ImmediateItemsOnDrop/>
+   <ShowPageMultipleItemLabel/>
+   <CompactRowIndent>1</CompactRowIndent>
+   <Location>R3C1:R46C4</Location>
+   <VersionLastUpdate>4</VersionLastUpdate>
+   <VersionUpdateableMin>3</VersionUpdateableMin>
+   <DefaultVersion>4</DefaultVersion>
+   <PivotField>
+    <Name>лексема</Name>
+    <Orientation>Row</Orientation>
+    <LayoutForm>Outline</LayoutForm>
+    <LayoutSubtotalLocation>Top</LayoutSubtotalLocation>
+    <LayoutCompactRow/>
+    <Position>1</Position>
+    <PivotItem>
+     <Name>близкий</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>быстро</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>вкусно</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>выносливый</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>высокий</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>высоко</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>громко</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>далеко</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>дешево</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>долго</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>жесткий</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>интересно</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>красиво</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>маленький</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>мало</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>медленно</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>много</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>низкий</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>низко</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>остро</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>плотно</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>поздно</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>правильно</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>просто</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>рано</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>серьёзный</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>сильно</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>скоро</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>скромный</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>сложно</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>толковый</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>точно</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>трудно</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>уместно</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>успешно</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>устройчивый</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>хорошо</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>целесообразно</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>часто</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>четко</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>эффективный</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name></Name>
+     <Hidden/>
+    </PivotItem>
+   </PivotField>
+   <PivotField>
+    <Name>часть речи</Name>
+    <Orientation>Column</Orientation>
+    <LayoutForm>Outline</LayoutForm>
+    <LayoutSubtotalLocation>Top</LayoutSubtotalLocation>
+    <LayoutCompactRow/>
+    <Position>1</Position>
+    <PivotItem>
+     <Name>наречие</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>прилагательное</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name></Name>
+     <Hidden/>
+    </PivotItem>
+   </PivotField>
+   <PivotField>
+    <Name>Center</Name>
+    <LayoutForm>Outline</LayoutForm>
+    <LayoutSubtotalLocation>Top</LayoutSubtotalLocation>
+    <LayoutCompactRow/>
+   </PivotField>
+   <PivotField>
+    <DataField/>
+    <Name>Значения</Name>
+    <SourceName>Данные</SourceName>
+    <Orientation>Column</Orientation>
+    <Position>-1</Position>
+    <LayoutCompactRow/>
+    <LayoutForm>Outline</LayoutForm>
+   </PivotField>
+   <PivotField>
+    <Name>Количество из Center</Name>
+    <ParentField>Center</ParentField>
+    <Orientation>Data</Orientation>
+    <Function>Count</Function>
+    <Position>1</Position>
+   </PivotField>
+   <PTLineItems>
+    <PTLineItem>
+     <Item>0</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>1</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>2</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>3</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>4</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>5</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>6</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>7</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>8</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>9</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>10</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>11</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>12</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>13</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>14</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>15</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>16</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>17</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>18</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>19</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>20</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>21</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>22</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>23</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>24</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>25</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>26</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>27</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>28</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>29</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>30</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>31</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>32</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>33</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>34</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>35</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>36</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>37</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>38</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>39</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>40</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <ItemType>Grand</ItemType>
+     <Item>0</Item>
+    </PTLineItem>
+   </PTLineItems>
+   <PTLineItems>
+    <Orientation>Column</Orientation>
+    <PTLineItem>
+     <Item>0</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>1</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <ItemType>Grand</ItemType>
+     <Item>0</Item>
+    </PTLineItem>
+   </PTLineItems>
+   <PTSource>
+    <CacheIndex>3</CacheIndex>
+    <VersionLastRefresh>4</VersionLastRefresh>
+    <VersionRefreshableMin>3</VersionRefreshableMin>
+    <RefreshName>Газон 68 Р</RefreshName>
+    <RefreshDate>2017-11-26T12:43:32</RefreshDate>
+    <RefreshDateCopy>2017-11-26T12:43:32</RefreshDateCopy>
+    <ConsolidationReference>
+     <FileName>[выборка сравнение.xml]Сравнительная</FileName>
+     <Reference>C2:C4</Reference>
+    </ConsolidationReference>
+   </PTSource>
+  </PivotTable>
+ </Worksheet>
+ <Worksheet ss:Name="сравнительная годы">
+  <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="15" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="14">
+   <Column ss:Width="119"/>
+   <Column ss:Width="29"/>
+   <Column ss:Width="113"/>
+   <Column ss:AutoFitWidth="0" ss:Width="32" ss:Span="2"/>
+   <Column ss:Index="7" ss:AutoFitWidth="0" ss:Width="40"/>
+   <Column ss:AutoFitWidth="0" ss:Width="113"/>
+   <Column ss:AutoFitWidth="0" ss:Width="32" ss:Span="3"/>
+   <Column ss:Index="13" ss:AutoFitWidth="0" ss:Width="40"/>
+   <Column ss:Width="140"/>
+   <Column ss:Width="136"/>
+   <Row ss:Index="3">
+    <Cell><Data ss:Type="String">Количество из лексема</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Названия строк</Data></Cell>
+    <Cell><Data ss:Type="String">Итог</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">88</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">2001&#160;</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">14</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">2002&#160;</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">29</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">2003&#160;</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">32</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">2004&#160;</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">12</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">2006&#160;</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">прилагательное</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">12</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">2002&#160;</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">2003&#160;</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">6</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">2004&#160;</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Общий итог</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>2</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <PivotTable xmlns="urn:schemas-microsoft-com:office:excel">
+   <Name>Сводная таблица5</Name>
+   <ImmediateItemsOnDrop/>
+   <ShowPageMultipleItemLabel/>
+   <CompactRowIndent>1</CompactRowIndent>
+   <Location>R3C1:R15C2</Location>
+   <VersionLastUpdate>4</VersionLastUpdate>
+   <VersionUpdateableMin>3</VersionUpdateableMin>
+   <DefaultVersion>4</DefaultVersion>
+   <PivotField>
+    <Name>лексема</Name>
+    <LayoutForm>Outline</LayoutForm>
+    <LayoutSubtotalLocation>Top</LayoutSubtotalLocation>
+    <LayoutCompactRow/>
+   </PivotField>
+   <PivotField>
+    <Name>часть речи</Name>
+    <Orientation>Row</Orientation>
+    <LayoutForm>Outline</LayoutForm>
+    <LayoutSubtotalLocation>Top</LayoutSubtotalLocation>
+    <LayoutCompactRow/>
+    <Position>1</Position>
+    <PivotItem>
+     <Name>наречие</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>прилагательное</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name></Name>
+     <Hidden/>
+    </PivotItem>
+   </PivotField>
+   <PivotField>
+    <Name>Center</Name>
+    <LayoutForm>Outline</LayoutForm>
+    <LayoutSubtotalLocation>Top</LayoutSubtotalLocation>
+    <LayoutCompactRow/>
+   </PivotField>
+   <PivotField>
+    <Name>Right context</Name>
+    <LayoutForm>Outline</LayoutForm>
+    <LayoutSubtotalLocation>Top</LayoutSubtotalLocation>
+    <LayoutCompactRow/>
+   </PivotField>
+   <PivotField>
+    <Name>Title</Name>
+    <LayoutForm>Outline</LayoutForm>
+    <LayoutSubtotalLocation>Top</LayoutSubtotalLocation>
+    <LayoutCompactRow/>
+   </PivotField>
+   <PivotField>
+    <Name>Author</Name>
+    <LayoutForm>Outline</LayoutForm>
+    <LayoutSubtotalLocation>Top</LayoutSubtotalLocation>
+    <LayoutCompactRow/>
+   </PivotField>
+   <PivotField>
+    <Name>Birthday</Name>
+    <LayoutForm>Outline</LayoutForm>
+    <LayoutSubtotalLocation>Top</LayoutSubtotalLocation>
+    <LayoutCompactRow/>
+   </PivotField>
+   <PivotField>
+    <Name>Header</Name>
+    <LayoutForm>Outline</LayoutForm>
+    <LayoutSubtotalLocation>Top</LayoutSubtotalLocation>
+    <LayoutCompactRow/>
+   </PivotField>
+   <PivotField>
+    <Name>Created</Name>
+    <Orientation>Row</Orientation>
+    <LayoutForm>Outline</LayoutForm>
+    <LayoutSubtotalLocation>Top</LayoutSubtotalLocation>
+    <LayoutCompactRow/>
+    <Position>2</Position>
+    <PivotItem>
+     <Name>2001&#160;</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>2002&#160;</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>2003&#160;</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>2004&#160;</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name>2006&#160;</Name>
+    </PivotItem>
+    <PivotItem>
+     <Name></Name>
+    </PivotItem>
+   </PivotField>
+   <PivotField>
+    <DataField/>
+    <Name>Значения</Name>
+    <SourceName>Данные</SourceName>
+    <Orientation>Column</Orientation>
+    <Position>-1</Position>
+    <LayoutCompactRow/>
+    <LayoutForm>Outline</LayoutForm>
+   </PivotField>
+   <PivotField>
+    <Name>Количество из лексема</Name>
+    <ParentField>лексема</ParentField>
+    <Orientation>Data</Orientation>
+    <Function>Count</Function>
+    <Position>1</Position>
+   </PivotField>
+   <PTLineItems>
+    <PTLineItem>
+     <Item>0</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <CountOfSameItems>1</CountOfSameItems>
+     <Item>0</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <CountOfSameItems>1</CountOfSameItems>
+     <Item>1</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <CountOfSameItems>1</CountOfSameItems>
+     <Item>2</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <CountOfSameItems>1</CountOfSameItems>
+     <Item>3</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <CountOfSameItems>1</CountOfSameItems>
+     <Item>4</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <Item>1</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <CountOfSameItems>1</CountOfSameItems>
+     <Item>1</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <CountOfSameItems>1</CountOfSameItems>
+     <Item>2</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <CountOfSameItems>1</CountOfSameItems>
+     <Item>3</Item>
+    </PTLineItem>
+    <PTLineItem>
+     <ItemType>Grand</ItemType>
+     <Item>0</Item>
+    </PTLineItem>
+   </PTLineItems>
+   <PTSource>
+    <CacheIndex>4</CacheIndex>
+    <VersionLastRefresh>4</VersionLastRefresh>
+    <VersionRefreshableMin>3</VersionRefreshableMin>
+    <RefreshName>Газон 68 Р</RefreshName>
+    <RefreshDate>2017-11-26T12:44:48</RefreshDate>
+    <RefreshDateCopy>2017-11-26T12:44:48</RefreshDateCopy>
+    <ConsolidationReference>
+     <FileName>[выборка сравнение.xml]Сравнительная</FileName>
+     <Reference>C2:C10</Reference>
+    </ConsolidationReference>
+   </PTSource>
+  </PivotTable>
+ </Worksheet>
  <Worksheet ss:Name="Сравнительная">
   <Table ss:ExpandedColumnCount="18" ss:ExpandedRowCount="101" x:FullColumns="1"
    x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="14">
    <Column ss:StyleID="s62" ss:Width="300"/>
-   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="77" ss:Span="1"/>
-   <Column ss:Index="4" ss:StyleID="s63" ss:Width="75"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="78"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="77"/>
+   <Column ss:StyleID="s63" ss:Width="75"/>
    <Column ss:StyleID="s63" ss:Width="300"/>
    <Column ss:Width="300"/>
    <Column ss:Width="75"/>
@@ -4325,7 +5248,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;я знаю о баскетболе немножко </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">&#160;</Data></Cell>
@@ -4347,7 +5272,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;целесообразно с экономической точки зрения: </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">дешево</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">дешевле</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">выбросить старый линолеум и настелить&#160;</Data></Cell>
@@ -4369,7 +5296,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;цветок, ― на 2― 4 см </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">низко</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">ниже</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">&#160;</Data></Cell>
@@ -4391,7 +5320,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;Цветёт в сентябре - октябре чуть </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">месяца. &#160;</Data></Cell>
@@ -4413,7 +5344,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;униженным, удовлетворяло правительство как нельзя </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">&#160;</Data></Cell>
@@ -4435,7 +5368,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;труда военнопленных в четыре раза </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">долго</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">дольше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">&#160;</Data></Cell>
@@ -4457,7 +5392,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;тройку недель, но никак не </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">&#160;</Data></Cell>
@@ -4479,7 +5416,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;тонны нефти платит государству налогов </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">мало</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">меньше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">чем другие. &#160;</Data></Cell>
@@ -4501,7 +5440,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;т. е. в два раза </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">чем DES. &#160;</Data></Cell>
@@ -4523,7 +5464,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;страдает и при этом ещё </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">сильно</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">сильнее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">её за это своё страданье&#160;</Data></Cell>
@@ -4545,7 +5488,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;срок действия договора страхования не </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">мало</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">менее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">одного года; &#160;</Data></Cell>
@@ -4567,7 +5512,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;специалистов» было вложено столько, что </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">дешево</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">дешевле</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">дать всем троечные дипломы, чем&#160;</Data></Cell>
@@ -4589,7 +5536,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;создания десантных кораблей-экранопланов на </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">более</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">прагматическую программу строительства атомного подводного&#160;</Data></Cell>
@@ -4611,7 +5560,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;совершать многократные поездки продолжительностью не </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">более</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">60 дней каждая. &#160;</Data></Cell>
@@ -4633,7 +5584,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;славян начала средневековья оказался намного </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">низкий</Data></Cell>
+    <Cell><Data ss:Type="String">прилагательное</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">ниже</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">провинциально-римского. &#160;</Data></Cell>
@@ -4655,7 +5608,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;сказал:&quot; долженствование &quot;в кинематике значительно </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">жесткий</Data></Cell>
+    <Cell><Data ss:Type="String">прилагательное</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">жёстче</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">чем причинное&quot; долженствование &quot;&lt;…&gt; &#160;</Data></Cell>
@@ -4677,7 +5632,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;сетчатке её глаз, получают вдвое </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">света. &#160;</Data></Cell>
@@ -4699,7 +5656,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;Севрюгиным квартиру общей площадью не </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">мало</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">менее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">110 квадратных метров. &#160;</Data></Cell>
@@ -4721,7 +5680,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;с мощностью 300-500 Вт. </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">хорошо</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">Лучше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">выбирать насос с хорошим фильтром&#160;</Data></Cell>
@@ -4743,7 +5704,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;с каждым годом становится всё </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">трудно</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">труднее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">&#160;</Data></Cell>
@@ -4765,7 +5728,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;расчётов функций у него значительно </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">мало</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">меньше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">чем для остальных алгоритмов. &#160;</Data></Cell>
@@ -4787,7 +5752,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;разгневалось.  А начальство― начальство ещё </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">напугано.  Начальству не до &quot;метафор&#160;</Data></Cell>
@@ -4809,7 +5776,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;публика начинала галдеть во дворе </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">громко</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">громче</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">положенного. &#160;</Data></Cell>
@@ -4831,7 +5800,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;просто благодаря докладу она взорвалась </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">рано</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">раньше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">&#160;</Data></Cell>
@@ -4853,7 +5824,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;пробовать и сравнивать, у кого </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">вкусно</Data></Cell>
+    <Cell><Data ss:Type="String">прилагательное</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">вкуснее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">получилось. &#160;</Data></Cell>
@@ -4875,7 +5848,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;прессе заключается в нагревании полуфабриката </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">высоко</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">выше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">температуры плавления (220° С) в&#160;</Data></Cell>
@@ -4897,7 +5872,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;Правда, веки у меня моргают </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">быстро</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">быстрее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">но это всё равно недостаточно&#160;</Data></Cell>
@@ -4919,7 +5896,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;получился не концептуальный документ, а </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">скоро</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">скорее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">учебник для студентов. &#160;</Data></Cell>
@@ -4941,7 +5920,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;победы к нашим мужчинам приходили </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">часто</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">чаще</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">причём выигрывал не только блистательный&#160;</Data></Cell>
@@ -4963,7 +5944,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;по сторонам и гордо заметил:   -</Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">высоко</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">Выше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">меня теперь только птицы! &#160;</Data></Cell>
@@ -4985,7 +5968,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;период только в ГВП обратились </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">более</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">1500 чел., а в целом&#160;</Data></Cell>
@@ -5007,7 +5992,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;парадокс, ибо любое млекопитающее становится </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">высокий</Data></Cell>
+    <Cell><Data ss:Type="String">прилагательное</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">выше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">когда садится (кошка, собака и&#160;</Data></Cell>
@@ -5029,7 +6016,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;ООН ― Генеральная Ассамблея и ещё </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">часто</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">чаще</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">Совет Безопасности, поскольку в нём&#160;</Data></Cell>
@@ -5051,7 +6040,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;окружении школьников, результаты получились несколько </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">скромный</Data></Cell>
+    <Cell><Data ss:Type="String">прилагательное</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">скромнее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">54% «много» и «очень много&#160;</Data></Cell>
@@ -5073,7 +6064,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;овладевающее им, не совесть, а </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">скоро</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">скорее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">нечто вроде высшего, утончённого самосознания&#160;</Data></Cell>
@@ -5095,7 +6088,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;но и заниматься реабилитацией, работать </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">на улицах, с детьми риска&#160;</Data></Cell>
@@ -5117,7 +6112,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;наружный шов позволяет перчаткам ещё </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">плотно</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">плотнее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">сидеть на руке, а спортсмену&#160;</Data></Cell>
@@ -5141,7 +6138,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;например, загрузка самолётов составляла не </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">более</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">10 человек на рейс. &#160;</Data></Cell>
@@ -5163,7 +6162,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;набор таких подставок - мал мала </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">маленький</Data></Cell>
+    <Cell><Data ss:Type="String">прилагательное</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">меньше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">рис. 2). &#160;</Data></Cell>
@@ -5185,7 +6186,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;на самом деле их гораздо </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">&#160;</Data></Cell>
@@ -5207,7 +6210,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;на опыт конкурентов, заложить несколько </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">средств. &#160;</Data></Cell>
@@ -5229,7 +6234,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;минимальная выплата не может быть </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">мало</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">меньше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">100 МРОТ, а тариф на&#160;</Data></Cell>
@@ -5251,7 +6258,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;любовь, то тут дело становится </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">серьёзный</Data></Cell>
+    <Cell><Data ss:Type="String">прилагательное</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">серьёзней</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">&#160;</Data></Cell>
@@ -5273,7 +6282,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;которой, как предполагалось, было не </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">мало</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">меньше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">100 человек. &#160;</Data></Cell>
@@ -5295,7 +6306,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;коммунисты&quot;, одним словом, ― только куда </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">остро</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">острее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">высказываются. &#160;</Data></Cell>
@@ -5317,7 +6330,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;Калуге, Татарстане и других регионах (</Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">более</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">чем в тридцати)&quot;. &#160;</Data></Cell>
@@ -5339,7 +6354,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;инфицированных оказалось на 67 процентов </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">мало</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">меньше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">чем среди них же, получивших&#160;</Data></Cell>
@@ -5361,7 +6378,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;или может не быть назначен </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">далеко</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">дальше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">на судейскую должность. &#160;</Data></Cell>
@@ -5383,7 +6402,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;изделия, так как нагартованный металл </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">хорошо</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">лучше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">звенит. &#160;</Data></Cell>
@@ -5405,7 +6426,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;и сквозь полупрозрачный занавес всё </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">четко</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">чётче</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">прорисовываются откровенно сказочные декорации Всё&#160;</Data></Cell>
@@ -5427,7 +6450,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;Звучало красиво, а выглядело ещё </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">красиво</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">краше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String"> Слонёнок стремительно нырял и плыл&#160;</Data></Cell>
@@ -5449,7 +6474,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;затянула победные песни…   Что произошло </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">далеко</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">дальше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">логически объяснить невозможно.  Я специально&#160;</Data></Cell>
@@ -5471,7 +6498,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;заместитель Нонна Агаджанова) вы стали </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">уделять внимания продюсерской работе, сами&#160;</Data></Cell>
@@ -5493,7 +6522,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;за их рассудок, он гораздо </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">устройчивый</Data></Cell>
+    <Cell><Data ss:Type="String">прилагательное</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">устойчивей</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">взрослого, а детская душа <B
@@ -5519,7 +6550,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;его словам, поможет компании и </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">далеко</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">дальше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">расширять свой бизнес. &#160;</Data></Cell>
@@ -5541,7 +6574,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;других: богатым городам незачем собирать </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">потому что отберут, а бедные&#160;</Data></Cell>
@@ -5563,7 +6598,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;достаточно двух растений по краям, </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">хорошо</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">лучше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">всего с северной стороны. &#160;</Data></Cell>
@@ -5585,7 +6622,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;день ото дня становится всё </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">толковый</Data></Cell>
+    <Cell><Data ss:Type="String">прилагательное</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">толковее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">и <B
@@ -5611,7 +6650,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;группе удалось завершить свою работу </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">рано</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">раньше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">других. &#160;</Data></Cell>
@@ -5633,7 +6674,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;говоря, взять напрокат самолёт не </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">сложно</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">сложнее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">чем автомобиль. &#160;</Data></Cell>
@@ -5655,7 +6698,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;газетного бизнеса, а выражение собственных, </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">часто</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">чаще</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">всего политических, интересов. &#160;</Data></Cell>
@@ -5677,7 +6722,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;выдержала напряжения и пробежала значительно </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">низко</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">ниже</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">своих возможностей, по праву считается&#160;</Data></Cell>
@@ -5699,7 +6746,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;вторая половина Земли, убегая всё </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">далеко</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">дальше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">и <B
@@ -5725,7 +6774,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;времена изменились, и сегодняшним дням </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">подходят не весёлые дискотечные напевы&#160;</Data></Cell>
@@ -5747,7 +6798,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;виде малых шариков имели размер </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">мало</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">менее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">0. 1 мм, в виде&#160;</Data></Cell>
@@ -5771,7 +6824,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;вещание в городе с населением </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">более</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">200 тысяч человек выдаётся только&#160;</Data></Cell>
@@ -5793,7 +6848,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;вероятно, страховая премия составит не </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">мало</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">менее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">2 тыс. долл. в год&#160;</Data></Cell>
@@ -5815,7 +6872,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;В работе конференции приняли участие </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">более</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">90 молодых учёных из Новосибирска&#160;</Data></Cell>
@@ -5837,7 +6896,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;в печени эффективность интерферонотерапии существенно </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">низко</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">ниже</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">&#160;</Data></Cell>
@@ -5859,7 +6920,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;в борьбе с коррупцией гораздо </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">эффективный</Data></Cell>
+    <Cell><Data ss:Type="String">прилагательное</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">эффективнее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">чем недавняя операция МВД против&#160;</Data></Cell>
@@ -5881,7 +6944,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;бизнеса банки более консервативны и </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">медленно</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">медленнее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">реагируют на изменения, происходящие на&#160;</Data></Cell>
@@ -5903,7 +6968,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;Берендеев показалось мне странным, ― вспоминал </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">поздно</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">позже</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">композитор. &#160;</Data></Cell>
@@ -5925,7 +6992,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;бани и сауны, то тут </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">уместно</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">уместнее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">всего экологические мотивы ― натуральные цвета&#160;</Data></Cell>
@@ -5947,7 +7016,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;автор говорит не слишком охотно ― </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">этнологии, нежели этологии: племенные обычаи&#160;</Data></Cell>
@@ -5969,7 +7040,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;а просто напихать как можно </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">самых раскрученных и узнаваемых композиций&#160;</Data></Cell>
@@ -5991,7 +7064,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;а &quot;дикари&quot;, как известно, гораздо </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">выносливый</Data></Cell>
+    <Cell><Data ss:Type="String">прилагательное</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">выносливее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell ss:StyleID="s68"><Data ss:Type="String">и, соответственно, <B
@@ -6017,7 +7092,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; Чуть-чуть </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">газа ― и он начинает резво&#160;</Data></Cell>
@@ -6039,7 +7116,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; Чуть </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">поздно</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">позже</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">было объявлено об официальной пресс-конференции&#160;</Data></Cell>
@@ -6061,7 +7140,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; Хотя, наверное, </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">целесообразно</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">целесообразнее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">было бы решить эту проблему&#160;</Data></Cell>
@@ -6083,7 +7164,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; У нас </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">остро</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">острее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">стоит вопрос объединиться внутри, создать&#160;</Data></Cell>
@@ -6105,7 +7188,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; Тем </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">интересно</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">интереснее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">ознакомиться с мемуарами наших военных&#160;</Data></Cell>
@@ -6127,7 +7212,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; Розничные абоненты всё </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">отдают предпочтение альтернативным компаниям связи&#160;</Data></Cell>
@@ -6149,7 +7236,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; Отец же амбивалентен не </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">мало</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">меньше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">Бабушки Фени. &#160;</Data></Cell>
@@ -6171,7 +7260,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; Но </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">хорошо</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">лучше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">конечно же, всё читать в&#160;</Data></Cell>
@@ -6193,7 +7284,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; Не </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">поздно</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">позднее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">первой декады сентября их можно&#160;</Data></Cell>
@@ -6215,7 +7308,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; Наш процент в рублях </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">мало</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">меньше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">чем у врача, ведь и&#160;</Data></Cell>
@@ -6239,7 +7334,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; Нам будет </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">просто</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">проще</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">выстраивать отношения со старым новым&#160;</Data></Cell>
@@ -6261,7 +7358,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; Наверное, многим куда </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">близкий</Data></Cell>
+    <Cell><Data ss:Type="String">прилагательное</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">ближе</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">показался бы эмоциональный разговор о&#160;</Data></Cell>
@@ -6283,7 +7382,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; Наверное, </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">хорошо</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">лучше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">купить за эти деньги хороший&#160;</Data></Cell>
@@ -6305,7 +7406,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; Конечно, было бы </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">правильно</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">правильней</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">проводить её не один, а&#160;</Data></Cell>
@@ -6327,7 +7430,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; ЗРС и </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">далеко</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">дальше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">будет наращиваться и развиваться. &#160;</Data></Cell>
@@ -6349,7 +7454,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; Грибы (</Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">хорошо</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">лучше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">белые) нарезать кусочками, обжарить на&#160;</Data></Cell>
@@ -6371,7 +7478,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; В Думе заседают люди, </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">склонные к разговорам. &#160;</Data></Cell>
@@ -6393,7 +7502,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; &quot;Ничего на свете </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">хорошо</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">лучше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">нету, чем бродить друзьям по&#160;</Data></Cell>
@@ -6415,7 +7526,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;  Чьи цифры </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">впечатлили депутатов и зрителей ― вопрос&#160;</Data></Cell>
@@ -6437,7 +7550,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;  Но― не </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">больше</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">так как, если честно, &#160;</Data></Cell>
@@ -6459,7 +7574,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;  Ещё </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">много</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">более</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">заинтриговали французов загадочные высказывания лидеров&#160;</Data></Cell>
@@ -6481,7 +7598,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160;  </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">успешно</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">Успешнее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">всего сегодня имеют возможность действовать&#160;</Data></Cell>
@@ -6503,7 +7622,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">точно</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">Точнее</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">говоря, не столько слабые, сколько&#160;</Data></Cell>
@@ -6525,7 +7646,9 @@
    </Row>
    <Row>
     <Cell><Data ss:Type="String">&#160; </Data></Cell>
-    <Cell ss:Index="4" ss:StyleID="s65"><Data ss:Type="String">&#160;<B
+    <Cell><Data ss:Type="String">поздно</Data></Cell>
+    <Cell><Data ss:Type="String">наречие</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#160;<B
        xmlns="http://www.w3.org/TR/REC-html40">Позже</B><Font
        xmlns="http://www.w3.org/TR/REC-html40">&#160;</Font></Data></Cell>
     <Cell><Data ss:Type="String">эта компания стала называться Intel&#160;</Data></Cell>
@@ -6554,11 +7677,13 @@
     <VerticalResolution>-4</VerticalResolution>
    </Print>
    <PageLayoutZoom>0</PageLayoutZoom>
+   <LeftColumnVisible>6</LeftColumnVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>1</ActiveRow>
+     <ActiveRow>75</ActiveRow>
      <ActiveCol>1</ActiveCol>
+     <RangeSelection>C2:C10</RangeSelection>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
